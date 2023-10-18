@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 20 DSA Coding Pattarns</title> 
+    <link rel="stylesheet" href="code_pattern.css">
+</head>
+<body> 
+      
+      
+     <div class="container">  
+        <img src="coding3.jpg" alt=""> 
+        <h2> 
+            Hello, <span>Coders</span> i'm Deepesh , I'm also <span>coder</span> I have started my leetcode journey after 2 years of my college and I get this feeling that I should have started early in my college days but it's never too late. 
+        </h2>  
+    
+
+        <p> 
+            The process of preparing for coding interviews is anxiety-inducing for many developers. There’s so much material to cover, and often much of it feels irrelevant to what devs are doing in their day jobs, which only adds to the stress.
+        </p> 
+        <p>One of the outcomes of this is that it’s now common for developers to spend weeks combing through hundreds of interview questions on sites like LeetCode. One of the most common points of anxiety developers that I’ve talked to have before the interview is: Have I solved enough practice questions? Could I have done more?</p> 
+        <p>That’s why I try to focus on helping developers grasp the underlyingpatterns behind each question — so they don’t have to worry about solving hundreds of problems and suffer from Leetcode fatigue. If you understand the generic patterns, you can use them as a template to solve a myriad of other problems with slight variations.</p> 
+        <p>Here, I’ve laid out the top 14 patterns that can be used to solve any coding interview question, as well as how to identify each pattern, and some example questions for each. This just touches the surface — I strongly recommend checking out <span>Grokking the Coding Interview: Patterns for Coding Questions</span> for comprehensive explanations, examples, and coding practice.</p> 
+         <p>The following patterns assume that you’ve brushed up on Data Structures. If you haven’t, check out these <span>refresher courses on Data Structures</span>.</p> 
+        <p>Let’s get started!</p>  
+         
+        <h2>1.Two Pointer approach:</h2> 
+        <p>Two pointer approach is an essential part of a programmer’s toolkit, especially in technical interviews. The name does justice in this case, it involves using two pointers to save time and space. (Here, pointers are basically array indexes).
+            Just like Binary Search is an optimization on the number of trials needed to achieve the result, this approach is used for the same benefit.
+           <span>The idea here is to iterate two different parts of the array simultaneously to get the answer faster.
+            Implementation </span> 
+            There are primarily two ways of implementing the two-pointer technique:</p> 
+          
+        <h2>a. One pointer at each end</h2> 
+        <p>One pointer starts from beginning and other from the end and they proceed towards each other</p>
+        <img src="twoptr1.png" alt="">
+        <!-- <img src="twoPtr3.png" alt=""> -->
+ <p>Example : In a sorted array, find if a pair exists with a given sum S</p> 
+ <ul> 
+    <li>Brute Force Approach: We could implement a nested loop finding all possible pairs of elements and adding them.</li>
+ </ul> 
+ <img  src="carbon (14).png" alt=""> 
+  
+ <nav> Time complexity: O(n²) </nav> 
+
+ <ul> 
+    <li>Efficient Approach:</li>
+ </ul> 
+ <img  src="carbon (15).png" alt=""> 
+ <nav>Time Complexity: O(n)</nav> 
+  
+ <h2>b. Different Paces</h2> 
+ <p>Both pointers start from the beginning but one pointer moves at a faster pace than the other one.</p>
+ <img src="twoPtr3.png" alt="">
+ <!-- <img src="twoPtr3.png" alt=""> -->
+<p>Example: Find the middle of a linked list</p> 
+<ul> 
+<li>Brute Force Approach: We can find the length of the entire linked list in one complete iteration and then iterate till half-length again.</li>
+</ul> 
+<img  src="carbon (16).png" alt=""> 
+
+
+
+<ul> 
+<li>Efficient Approach:</li>
+</ul> 
+<img  src="carbon (17).png" alt="">  
+
+<nav>How does this technique save space?</nav> 
+<p>There are several situations when a naive implementation of a problem requires additional space thereby increasing the space complexity of the solution. Two-pointer technique often helps to decrease the required space or remove the need for it altogether</p> 
+<p>Example: Reverse an array</p> 
+<ul> 
+    <li> 
+        Naive Solution: Using a temporary array and fillings elements in it from the end
+    </li>
+</ul> 
+<img  src="carbon (18).png" alt="">  
+<nav>Space Complexity: O(n)</nav>  
+ 
+<ul> 
+    <li>Efficient Solution: Moving pointers towards each other from both ends and swapping elements at their positions</li>
+</ul>  
+<img  src="carbon (19).png" alt="">  
+<nav>Space Complexity: O(1)</nav>   
+<p>Here you can find all two pointer problems</p> 
+<a href="https://leetcode.com/tag/two-pointers/">Click Here</a> 
+
+        </div> 
+
+    
+</body>
+</html>
